@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: aryan-cloud-hosting
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PHP_DISPLAY_ERRORS
+        value: "0"
